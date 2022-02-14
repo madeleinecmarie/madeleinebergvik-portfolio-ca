@@ -11,6 +11,7 @@ import RedirectToPage from "../components/button/Button";
 import HeroSection from "../components/hero/HeroSection";
 import CoffeeImg from "../components/coffeeimg/CoffeeImg";
 import Footer from "../components/footer/Footer";
+import { useRouter } from "next/router";
 
 const InfoSection = styled.div`
   display: flex;
