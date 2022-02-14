@@ -8,7 +8,6 @@ const BodyText = styled.p`
   margin-top: 20px !important;
 
   ${media.between("medium", "large")`
-    /* screen width is between 768px (medium) and 1170px (large) */
     font-size: var(--media-body-text);
   `}
 `;

@@ -28,7 +28,6 @@ const GlobalStyle = createGlobalStyle`
     // Font sizes media queries
     --media-body-text: 22px;
     --media-hero-heading: 80px;
-    // --media-hero-paragraph: ;
     --media-h1: 55px;
     --media-h2: 45px;
     --media-h3: 35px;
@@ -117,8 +116,3 @@ ${media.lessThan("560px")`
 `;
 
 export default GlobalStyle;
-
-// body {
-//   margin: 0;
-//   padding: 0;
-// }

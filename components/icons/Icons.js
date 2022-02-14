@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import styled from "styled-components";
 import media from "styled-media-query";
 
@@ -76,7 +75,6 @@ const Icons = () => {
     <IconsDiv className="icons__container">
       {iconsLogo.map((img) => (
         <KeyDiv key={img.title}>
-          {/* <Image src={img.src} alt={img.title} height="110px" width="100%" /> */}
           <img src={img.src} alt={img.title}></img>
         </KeyDiv>
       ))}

@@ -8,10 +8,6 @@ const AnchorTag = styled.a`
   &:hover {
     color: var(--green);
   }
-
-  // &:active {
-  //   color: var(--green);
-  // }
 `;
 
 export default AnchorTag;

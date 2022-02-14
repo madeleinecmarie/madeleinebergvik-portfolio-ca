@@ -11,7 +11,10 @@ export default function ProjectsIndex() {
     <>
       <Head>
         <title>Madeleine Bergvik Portfolio</title>
-        <meta name="description" content="Hi! And welcome to my portfolio!" />
+        <meta
+          name="description"
+          content="I created the projects page for some of the projects I've made the last couple of year. Stay tuned - there will be more :)"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

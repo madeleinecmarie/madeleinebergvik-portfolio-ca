@@ -28,7 +28,7 @@ const Nav = styled.nav`
   `}
 
   ${media.lessThan("415px")`
-  width: 80%;
+  width: 90%;
   `}
 `;
 

@@ -3,13 +3,13 @@ import styled from "styled-components";
 import Body from "../components/body/Body";
 import { Header } from "../components/header/Header";
 import Main from "../components/main/Main";
-import TextSection from "../components/main/TextSection";
-import SoftwareSection from "../components/main/SoftwareSection";
-import Skills from "../components/main/Skills";
-import ExperienceCards from "../components/main/Experience";
+import TextSection from "../components/textsection/TextSection";
+import SoftwareSection from "../components/softwaresection/SoftwareSection";
+import Skills from "../components/skills/Skills";
+import ExperienceCards from "../components/experience/Experience";
 import RedirectToPage from "../components/button/Button";
 import HeroSection from "../components/hero/HeroSection";
-import CoffeeImg from "../components/main/CoffeeImg";
+import CoffeeImg from "../components/coffeeimg/CoffeeImg";
 import Footer from "../components/footer/Footer";
 
 const InfoSection = styled.div`
@@ -31,7 +31,10 @@ export default function Home() {
     <>
       <Head>
         <title>Madeleine Bergvik Portfolio</title>
-        <meta name="description" content="Hi! And welcome to my portfolio!" />
+        <meta
+          name="description"
+          content="Hi! I'm Madeleine Bergvik, and welcome to my portfolio. This is a place where you can get to know me. "
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

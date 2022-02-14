@@ -1,7 +1,6 @@
 import React from "react";
 import H3Heading from "../heading/H3Heading";
 import Paragraph from "../bodytext/Paragraph";
-import H2Heading from "../heading/H2Heading";
 import styled from "styled-components";
 
 const CvStyle = styled.div`
