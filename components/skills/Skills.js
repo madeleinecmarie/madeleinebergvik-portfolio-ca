@@ -33,11 +33,15 @@ function Skills() {
     <SkillsDiv>
       <H2Heading>Personal skills.</H2Heading>
       <PersonalSkills>
-        <BodyText>Teamwork</BodyText>
-        <BodyText>Structured</BodyText>
-        <BodyText>Creativity</BodyText>
-        <BodyText>Leadership</BodyText>
-        <BodyText>Adaptibility</BodyText>
+        {[
+          "Teamwork",
+          "Structured",
+          "Creativity",
+          "Leadership",
+          "Adaptibility",
+        ].map((skill) => (
+          <BodyText key={skill}>{skill}</BodyText>
+        ))}
       </PersonalSkills>
     </SkillsDiv>
   );

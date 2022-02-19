@@ -5,8 +5,7 @@ import H2Heading from "../heading/H2Heading";
 import styled from "styled-components";
 
 const H2Style = styled.div`
-  margin: auto !important;
-  margin-top: 180px !important;
+  margin: 180px auto auto;
   width: 82%;
 `;
 
@@ -15,12 +14,35 @@ const Cards = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   width: 82%;
-  margin: auto !important;
+  margin: auto;
   gap: 90px;
-  margin-top: 80px !important;
+  margin-top: 80px;
 `;
 
 function Experience() {
+  const experiences = [
+    {
+      heading: "Lee, Oslo Fashion Outlet",
+      subHeading: "Part",
+      content: ["January 2020 - present"],
+    },
+    {
+      heading: "Glassperlen boligsameie",
+      subHeading: "Board",
+      content: ["April 2018 - present"],
+    },
+    {
+      heading: "Stockfleths AS",
+      subHeading: "Barista",
+      content: ["Former manager & assistant manager", "October 2015 - present"],
+    },
+    {
+      heading: "Wayne’s Coffee",
+      subHeading: "Barista",
+      content: ["July 2015 - November 2015"],
+    },
+  ];
+
   return (
     <div>
       <H2Style>
@@ -28,28 +50,16 @@ function Experience() {
       </H2Style>
 
       <Cards>
-        <div>
-          <H3Heading>Lee, Oslo Fashion Outlet</H3Heading>
-          <Paragraph>Part-time</Paragraph>
-          <Paragraph>January 2020 - present</Paragraph>
-        </div>
-        <div>
-          <H3Heading>Glassperlen boligsameie</H3Heading>
-          <Paragraph>Board member</Paragraph>
-          <Paragraph>April 2018 - present</Paragraph>
-        </div>
-        <div>
-          <H3Heading>Stockfleths AS</H3Heading>
-          <Paragraph>Barista</Paragraph>
-          <Paragraph>Former manager & assistant manager</Paragraph>
-          <Paragraph>October 2015 - present</Paragraph>
-        </div>
-        <div>
-          <H3Heading>Wayne’s Coffee</H3Heading>
-          <Paragraph>Barista</Paragraph>
-          <Paragraph>July 2015 - November 2015</Paragraph>
-        </div>
-        <div></div>
+        {experiences.map(({ heading, subHeading, content }) => (
+          <div key={heading}>
+            <H3Heading>{heading}</H3Heading>
+            <Paragraph>{subHeading}</Paragraph>
+
+            {content.map((paragraph) => (
+              <Paragraph key={paragraph}>{paragraph}</Paragraph>
+            ))}
+          </div>
+        ))}
       </Cards>
     </div>
   );

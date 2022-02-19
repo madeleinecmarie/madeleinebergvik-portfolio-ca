@@ -5,6 +5,8 @@ import styled from "styled-components";
 import Image from "next/image";
 import Link from "next/link";
 
+const ProjectsContainer = styled.div``;
+
 const Project = styled.div`
   display: flex;
   justify-content: center;
@@ -67,7 +69,7 @@ const Projects = () => {
   ];
 
   return (
-    <projectsContainer>
+    <ProjectsContainer>
       {projectsCard.map(({ image, title, description, id, link }) => (
         <Project key={id}>
           <ProjectImage>
@@ -81,7 +83,7 @@ const Projects = () => {
           <BodyText className="projects__bodytext">{description}</BodyText>
         </Project>
       ))}
-    </projectsContainer>
+    </ProjectsContainer>
   );
 };
 

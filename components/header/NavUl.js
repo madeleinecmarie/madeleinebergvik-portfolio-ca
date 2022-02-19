@@ -6,6 +6,7 @@ const NavUl = styled.ul`
   justify-content: space-evenly;
   width: 33%;
 
+  // FIXME: Use greater than. Mobile first!
   ${media.lessThan("560px")`
   width: 40%;
   `}

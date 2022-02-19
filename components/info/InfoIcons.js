@@ -15,6 +15,7 @@ function InfoIcons() {
       <div>
         <H2Heading className="contact__headline">Get in touch.</H2Heading>
         <IconStyle>
+          {/* DRY: Use map */}
           <Link
             href="https://www.linkedin.com/in/madeleine-bergvik-276b6b20a/"
             passHref

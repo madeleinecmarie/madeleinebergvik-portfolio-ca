@@ -6,7 +6,22 @@ import AnchorTag from "./AnchorTag";
 import { useRouter } from "next/router";
 
 export const Header = () => {
+  const navList = [
+    {
+      label: "Projects",
+      url: "/projects",
+    },
+    {
+      label: "Info",
+      url: "/info",
+    },
+  ];
+
   const router = useRouter();
+
+  function getActivePath(inputPath = "") {
+    return router.pathname === inputPath;
+  }
 
   return (
     <>
@@ -23,24 +38,13 @@ export const Header = () => {
           </a>
         </Link>
         <NavUl>
-          <li>
-            <Link href="/projects" passHref>
-              <AnchorTag
-                className={router.pathname === "/projects" ? "active" : ""}
-              >
-                Projects
-              </AnchorTag>
-            </Link>
-          </li>
-          <li>
-            <Link href="/info" passHref>
-              <AnchorTag
-                className={router.pathname === "/info" ? "active" : ""}
-              >
-                Info
-              </AnchorTag>
-            </Link>
-          </li>
+          {navList.map(({ label, url }) => (
+            <li key={url}>
+              <Link href={url} passHref>
+                <AnchorTag isActive={getActivePath(url)}>{label}</AnchorTag>
+              </Link>
+            </li>
+          ))}
         </NavUl>
       </Nav>
     </>

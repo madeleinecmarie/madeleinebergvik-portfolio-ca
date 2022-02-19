@@ -41,20 +41,14 @@ function InfoAbout() {
       <AboutSection>
         <H1Heading>About me.</H1Heading>
 
-        <div>
-          <InfoTextParagraph>
-            Hi there! I am Madeleine Bergvik, and this is my portfolio. Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit. Viverra ut nisl,
-            lobortis ornare. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Viverra ut nisl, lobortis ornare.
-          </InfoTextParagraph>
-          <InfoTextParagraph>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra ut
-            nisl, lobortis ornare. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.
-          </InfoTextParagraph>
-        </div>
+        <InfoTextParagraph>
+          Hi there! I am Madeleine Bergvik, and this is my portfolio. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Viverra ut nisl,
+          lobortis ornare. Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Viverra ut nisl, lobortis ornare.
+        </InfoTextParagraph>
       </AboutSection>
+
       <AboutImg>
         <Image
           src="/images/girlanddog.png"
