@@ -4,17 +4,17 @@ import media from "styled-media-query";
 
 const BtnDiv = styled.div`
   width: 82%;
-  margin: auto !important;
-  margin-top: 90px !important;
+  margin: auto;
+  margin-top: 90px;
   transition: var(--transformation);
 
   ${media.lessThan("425px")`
-  margin-top: 5px !important;
+  margin-top: 5px;
 }
 `}
 `;
 
-const Button = styled.div`
+const Button = styled.a`
   height: 90px;
   width: 214px;
   background: var(--pink-btn);
@@ -33,17 +33,12 @@ const Button = styled.div`
   }
 `;
 
-const handleClick = (e) => {
-  console.log("Redirected");
-  console.log(e);
-};
+// TODO: remove this does nothing
 
-const RedirectToPage = () => (
+const RedirectToPage = ({ href = "/cv", handleOnClickCB }) => (
   <BtnDiv>
-    <Link href="/cv" passHref>
-      <a>
-        <Button onClick={handleClick}>See full CV</Button>
-      </a>
+    <Link href={href} passHref>
+      <Button onClick={handleOnClickCB}>See full CV</Button>
     </Link>
   </BtnDiv>
 );

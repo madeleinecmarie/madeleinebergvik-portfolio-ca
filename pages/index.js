@@ -23,6 +23,7 @@ const Software = styled.div`
   display: flex;
   justify-content: center;
   width: 80%;
+  // FIXME: Remove important. What are you trying to overwrite?
   margin: auto !important;
 `;
 

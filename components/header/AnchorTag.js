@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const AnchorTag = styled.a`
-  color: var(--black);
+  color: ${(props) => (props.isActive ? "var(--light-green)" : "var(--black)")};
   font-weight: var(--semi-bold);
   font-size: var(--nav-text);
 

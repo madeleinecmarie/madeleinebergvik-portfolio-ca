@@ -14,6 +14,7 @@ const Nav = styled.nav`
   padding-bottom: 30px !important;
   background-color: var(--white);
 
+  // FIXME: If you did mobile first you would have this problem of between and lessThan
   ${media.between("medium", "large")`
     width: 95%;
   `}

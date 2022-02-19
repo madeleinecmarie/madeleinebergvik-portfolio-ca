@@ -8,12 +8,13 @@ const CvStyle = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   width: 82%;
-  margin: auto !important;
-  margin-top: 160px !important;
+  margin: auto;
+  margin-top: 160px;
   gap: 90px;
 `;
 
 function Cv() {
+  // NOTE: DRY - use a map
   return (
     <CvStyle>
       <div>
@@ -37,7 +38,6 @@ function Cv() {
         <Paragraph>Barista</Paragraph>
         <Paragraph>July 2015 - November 2015</Paragraph>
       </div>
-      <div></div>
       <div>
         <H3Heading>BikBok</H3Heading>
         <Paragraph>Sales</Paragraph>

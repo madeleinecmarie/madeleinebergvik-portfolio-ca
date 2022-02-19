@@ -3,7 +3,8 @@ import styled from "styled-components";
 
 const AboutText = styled.div`
   font-size: var(--body-text);
-  margin-top: 30px !important;
+  // FIXME: Why important?
+  margin-top: 30px;
   width: 100%;
 `;
 

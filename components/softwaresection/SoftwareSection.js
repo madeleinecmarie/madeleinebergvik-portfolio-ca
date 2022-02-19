@@ -7,6 +7,7 @@ import media from "styled-media-query";
 const SoftwareDiv = styled.div`
   margin-top: 90px !important;
 
+  // TODO: This should be greater than. Mobile first principles
   ${media.lessThan("medium")`
   margin-top: 160px !important;
   `}

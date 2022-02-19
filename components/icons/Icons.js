@@ -70,12 +70,11 @@ const Icons = () => {
       title: "Figma",
     },
   ];
-
   return (
     <IconsDiv className="icons__container">
       {iconsLogo.map((img) => (
         <KeyDiv key={img.title}>
-          <img src={img.src} alt={img.title}></img>
+          <img src={img.src} alt={img.title} />
         </KeyDiv>
       ))}
     </IconsDiv>

@@ -6,7 +6,7 @@ const HeroParagraph = styled.div`
   justify-content: center;
   font-size: var(--hero-text);
   font-weight: var(--semi-bold);
-  margin-top: 10px !important;
+  margin-top: 10px;
 
   ${media.lessThan("375px")`
   font-size: var(--media-hero-paragraph-smallest);

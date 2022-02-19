@@ -10,7 +10,7 @@ const Coffee = styled.div`
 
   ${media.lessThan("560px")`
   width: 80%;
-  margin-top: 60px !important;
+  margin-top: 60px;
   `}
 `;
 

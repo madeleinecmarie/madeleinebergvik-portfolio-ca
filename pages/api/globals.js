@@ -1,3 +1,4 @@
+// FIXME: This file is located in the wrong place
 import { createGlobalStyle } from "styled-components";
 import media from "styled-media-query";
 
